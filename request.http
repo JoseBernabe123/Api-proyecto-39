@@ -1,0 +1,71 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Pamela ",
+    "apellido": "de Reyes",
+    "email": "Toxiquita78@gmail.com",
+    "depa": "San Salvador",
+    "password": "Dagolove123"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63858927c34fc8a37ebbf343 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63858927c34fc8a37ebbf343 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Alla ",
+    "apellido": "Forla",
+    "email": "Coman8@gmail.com",
+    "depa": "San Marcos",
+    "password": "UCA1345"
+}
+
+
+###
+DELETE  http://localhost:9000/api/users/63858927c34fc8a37ebbf343 HTTP/1.1
+
+
+
+
+
+//prendas//
+###
+POST http://localhost:9000/api/prendas HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Jogger ADIDAS ",
+    "descripcion": "Estado 9 de 10",
+    "municipio": "Chalatenango"
+}
+
+//Todos los usuarios
+###
+GET http://localhost:9000/api/prendas HTTP/1.1
+
+//un usuario
+###
+GET http://localhost:9000/api/prendas/6385bb4df8e1804485b157f0 HTTP/1.1
+
+//Editanto una prenda
+###
+PUT http://localhost:9000/api/prendas/6385bbfcf8e1804485b157f2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Sueter roto",
+    "descripcion": "Esta roto, pero pasable",
+    "municipio": "San Jacinto",
+}
+
+//borrando prenda
+###
+DELETE  http://localhost:9000/api/prendas/6385bbfcf8e1804485b157f2 HTTP/1.1
